@@ -183,8 +183,18 @@
     
     // ButtonAがクリックされた時の処理
     function btnAClick(e){
+        var canvas = $("#mycanvas")[0];
+        var ctx = canvas.getContext("2d");
+        var img = new Image();
+        img.src = "war_bakuha_switch_on.png";
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0, 200, 200);
+        };
         active = true;
         startTime = new Date();
+        var audio = new Audio();
+        audio.src = "pin.wav";
+        audio.play();
     }
 
     // ButtonBがクリックされた時の処理
