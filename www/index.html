@@ -172,7 +172,7 @@
         var canvas = $("#mycanvas")[0];
         var ctx = canvas.getContext("2d");
         var img = new Image();
-        img.src = "yobidashi_bell1.png";
+        img.src = "war_bakuha_switch_off.png";
         img.onload = function() {
             ctx.drawImage(img, 0, 0, 200, 200);
         };
@@ -200,6 +200,8 @@
         $("#time").html("経過時間： 0");
         $("#remain").html("残り時間： " + period);
     }
+
+    
     
  
     // 繰り返し実行する処理
@@ -221,7 +223,6 @@
 </head>
 <body>
     <canvas id="mycanvas" width="200" height="200">Test</canvas>
-    <img id="switchImage" src="war_bakuha_switch_off.png" width="200" height="200">
 
     <div id="minuteStr">〇</div>
     <div id="secondStr">〇</div>
